@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.revature</groupId>
-	<artifactId>projectone</artifactId>
+	<artifactId>projecttwo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>projectone</name>
-	<description>First Revature Project</description>
+	<name>projecttwo</name>
+	<description>Second Revature Project</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
