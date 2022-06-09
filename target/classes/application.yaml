@@ -1,6 +1,13 @@
 server:
   port: 8085
-
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
