@@ -14,7 +14,8 @@ It is recommended to track the team's velocity.
 ___
 
 >## SLO (_Service Level Objective_)
->>To be disclosed
+>>90% guaranteed uptime whenever we can afford to host, including health metrics, traffic monitoring and error tracking
+
 ____
 >### Deadline
 >June 20th, 2022
