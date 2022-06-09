@@ -1,13 +1,10 @@
 server:
   port: 8085
-#management:
-#  endpoint:
-#    health:
-#      show-details: always
-#  endpoints:
-#    web:
-#      exposure:
-#        include: *
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -21,7 +18,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     generate-ddl: true
-  show-sql: true
+  show-sql: truea
   jackson:
     serialization:
       fail-on-empty-beans: false
