@@ -60,6 +60,7 @@ public class UserController {
         ResponseEntity responseEntity = null;
         if(itemService.isItemExists(item.getItemId())){
             userService.addItemToCart(item.getItemId());
+            LOGGER.info("Adding item " + item.getItemId() + "to cart!");
             return responseEntity = new ResponseEntity<String>(item.getItemId() + " successfully added to cart", HttpStatus.ACCEPTED);
 
         }else{
