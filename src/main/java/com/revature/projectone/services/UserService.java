@@ -25,6 +25,8 @@ public interface UserService {
 
     public User getByEmail(String email);
 
+    public User findByEmailAndPassword(String email, String password);
+
     public List<User> getUsers();
 
     public boolean isUserExists(int userId);

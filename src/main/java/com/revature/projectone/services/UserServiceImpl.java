@@ -72,6 +72,8 @@ LOGGER.info("Successfully logged out");
         return userDAO.findByEmail(email);
     }
 
+    public User findByEmailAndPassword(String email, String password) {return userDAO.findByEmailAndPassword(email, password);}
+
 
     @Override
     public List<User> getUsers() {
