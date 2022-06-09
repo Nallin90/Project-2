@@ -33,11 +33,13 @@ public class LoginController {
         //check if login info exists
 
         String email = loginTemplate.getEmail();
-        if (userService.getByEmail(loginTemplate.getEmail()) != null) {
+        if (userService.findByEmailAndPassword(loginTemplate.getEmail(), loginTemplate.getPassword()) != null) {
             return ResponseEntity.ok(userService.login(loginTemplate.getEmail(), loginTemplate.getPassword()));
         } else {
-            throw new UserNotFoundException("User not found" + ResponseEntity.notFound().build());
+            throw new UserNotFoundException("Invalid username or password" + ResponseEntity.badRequest().build());
         }
+
+
 
 
     }
